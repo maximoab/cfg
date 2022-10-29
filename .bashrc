@@ -119,3 +119,9 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ] ; then source /etc/profile.d/vte.sh; fi # U
 
 alias config='/usr/bin/git --git-dir=/home/maximo/.cfg/ --work-tree=/home/maximo'
 alias config='/usr/bin/git --git-dir=/home/maximo/.cfg/ --work-tree=/home/maximo'
+alias config='/usr/bin/git --git-dir=/home/maximo/.cfg/ --work-tree=/home/maximo'
+alias config='/usr/bin/git --git-dir=/home/maximo/.cfg/ --work-tree=/home/maximo'
+alias config='/usr/bin/git --git-dir=/home/maximo/.cfg/ --work-tree=/home/maximo'
+alias config='/usr/bin/git --git-dir=/home/maximo/.cfg/ --work-tree=/home/maximo'
+alias config='/usr/bin/git --git-dir=/home/maximo/.cfg/ --work-tree=/home/maximo'
+alias config='/usr/bin/git --git-dir=/home/maximo/.cfg/ --work-tree=/home/maximo'
