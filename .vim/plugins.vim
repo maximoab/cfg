@@ -13,6 +13,7 @@ Plug 'itchyny/lightline.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
+"Plug 'ryanoasis/vim-devicons'
 
 " Tree
 Plug 'scrooloose/nerdtree'
