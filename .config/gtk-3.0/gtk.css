@@ -1,3 +1,6 @@
+/* UNITE windowDecorations */
+@import url('/home/maximo/.local/share/gnome-shell/extensions/unite@hardpixel.eu/styles/gtk3/buttons-right/maximized.css');
+/* windowDecorations UNITE */
  VteTerminal,
  TerminalScreen,
  vte-terminal {

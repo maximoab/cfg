@@ -20,7 +20,6 @@ so ~/.vim/maps.vim
 colorscheme gruvbox
 let g:lightline.colorscheme = 'gruvbox'
 let g:gurvbox_contrast_dark = "hard"
-"let g:material_style = "oceanic"
 "let g:gruvbox_transparent_bg=1
 "let g:dracula_transparent_bg=1
 "autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
