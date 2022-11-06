@@ -11,17 +11,24 @@ set showmatch
 set termguicolors
 set sw=2
 set relativenumber
-set laststatus=2
+set laststatus=3
 set noshowmode
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
-colorscheme gruvbox
-let g:lightline.colorscheme = 'gruvbox'
-let g:gurvbox_contrast_dark = "hard"
-"let g:gruvbox_transparent_bg=1
-"let g:dracula_transparent_bg=1
+" gruvbox"
+"colorscheme gruvbox
+"let g:lightline.colorscheme = 'gruvbox'
+"let g:gurvbox_contrast_dark = "hard"
+"let g:lightline.colorscheme = 'gruvbox'
+""let g:gruvbox_transparent_bg=1
+""let g:dracula_transparent_bg=1
+
+ " gruvbox-material"
+colorscheme gruvbox-material
+let g:lightline.colorscheme = 'gruvbox_material'
+
 "autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
 autocmd BufEnter NERD_* setlocal rnu
 

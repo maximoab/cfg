@@ -23,7 +23,7 @@ let g:lightline = {
       \ 'component_function': {
       \   'gitbranch': 'gitbranch#name',
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'gruvbox_material',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
@@ -59,6 +59,10 @@ let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol='' " symbol for clos
 let NERDTreeMapCustomOpen='o'
 let g:DevIconsEnableFoldersOpenClose = 1
 
+" sets the color for folders that did not match any rule
+"let s:beige = "F5C06F"
+"let g:WebDevIconsDefaultFolderSymbolColor = s:beige 
+
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsSnippetDirectories=[$HOME.'/configs/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -75,6 +79,7 @@ let g:tmux_navigator_no_mappings=1
 
 " coc
 autocmd FileType scss setl iskeyword+=@-@
+"autocmd FileType css setl iskeyword+=-
 
 " Highlight symbol under cursor on CursorHold
 

@@ -11,6 +11,7 @@ Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
   
 " Themes
+Plug 'sainnhe/gruvbox-material'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'ryanoasis/vim-devicons'
