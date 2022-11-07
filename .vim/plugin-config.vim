@@ -30,7 +30,7 @@ let g:lightline = {
       \ }
       \}
 
-" nerdtree
+" NerdTree
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let NERDTreeAutoDeleteBuffer=1
@@ -44,24 +44,19 @@ let NERDTreeShowBookmarks=1
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
 
-" change default arrows
+"change default arrows nerdtree
 let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
 "let g:NERDTreeDirArrowExpandable = ''
 "let g:NERDTreeDirArrowCollapsible = ''
 
 autocmd FileType help,nerdtree IndentLinesDisable
 
+" add custom icons folders for closed and open in nerdtree
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
-
 let g:DevIconsDefaultFolderOpenSymbol='' " symbol for open folder (f07c)
 let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol='' " symbol for closed folder (f07b)
 let NERDTreeMapCustomOpen='o'
-let g:DevIconsEnableFoldersOpenClose = 1
-
-" sets the color for folders that did not match any rule
-"let s:beige = "F5C06F"
-"let g:WebDevIconsDefaultFolderSymbolColor = s:beige 
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsSnippetDirectories=[$HOME.'/configs/.vim/UltiSnips']
@@ -70,17 +65,25 @@ let g:UltiSnipsListSnippets="<C-_>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
+" Lenguaje servers
 let g:coc_global_extensions = [
       \ 'coc-tsserver'
       \ ]
 
 " tmux navigator
-let g:tmux_navigator_no_mappings=1
+"let g:tmux_navigator_no_mappings=1
 
 " coc
 autocmd FileType scss setl iskeyword+=@-@
 autocmd FileType css setl iskeyword+=-
 
+" Better display for messages
+set cmdheight=1
+
+" always show signcolumns
+set signcolumn=yes
+
 " Highlight symbol under cursor on CursorHold
 
 let $FZF_DEFAULT_OPTS='--layout=reverse'
+

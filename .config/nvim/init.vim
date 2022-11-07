@@ -17,7 +17,7 @@ so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
-" set relative line numbers upon entering nerdtree
+"  relative line numbers upon entering nerdtree
 "let g:NERDTreeShowLineNumbers=1
 "autocmd BufEnter NERD_* setlocal rnu
 
