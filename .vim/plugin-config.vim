@@ -79,7 +79,7 @@ let g:tmux_navigator_no_mappings=1
 
 " coc
 autocmd FileType scss setl iskeyword+=@-@
-"autocmd FileType css setl iskeyword+=-
+autocmd FileType css setl iskeyword+=-
 
 " Highlight symbol under cursor on CursorHold
 

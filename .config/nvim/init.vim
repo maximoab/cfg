@@ -17,7 +17,14 @@ so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
-" gruvbox"
+" set relative line numbers upon entering nerdtree
+"let g:NERDTreeShowLineNumbers=1
+"autocmd BufEnter NERD_* setlocal rnu
+
+" enable transparent background 
+"autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
+
+" enable theme gruvbox configuration - disable if gruvbox_material theme is active" 
 "colorscheme gruvbox
 "let g:lightline.colorscheme = 'gruvbox'
 "let g:gurvbox_contrast_dark = "hard"
@@ -25,14 +32,18 @@ so ~/.vim/maps.vim
 ""let g:gruvbox_transparent_bg=1
 ""let g:dracula_transparent_bg=1
 
- " gruvbox-material"
+ " enable theme gruvbox-material configuration - disable if gruvbox original theme is active
+ if has('termguicolors')
+          set termguicolors
+        endif
+set background=dark
+let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
 let g:lightline.colorscheme = 'gruvbox_material'
 
-"autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
-autocmd BufEnter NERD_* setlocal rnu
+"au bufnewfile,bufread *.html set filetype=htmldjango
 
-au BufNewFile,BufRead *.html set filetype=htmldjango
+" colorizer-lua. This will create an autocmd for FileType * to highlight every filetype. NOTE: You should add this line after/below where your plugins are setup.
 lua require'colorizer'.setup()
 
 "" Searching
