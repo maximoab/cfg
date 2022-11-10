@@ -1,8 +1,5 @@
 " PLUGINS CONFIG
 
-"let html_no_rendering=1
-"let html_my_rendering=1
-
 " HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 
@@ -39,6 +36,8 @@ let NERDTreeDirArrows=1
 let NERDTreeMapOpenInTab='\t'
 let NERDTreeShowLineNumbers=0
 let NERDTreeShowBookmarks=1
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
 
 " automatically close neovim when NERDTree is the only window left
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
@@ -46,16 +45,14 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 "change default arrows nerdtree
 let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
-"let g:NERDTreeDirArrowExpandable = ''
-"let g:NERDTreeDirArrowCollapsible = ''
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
 
 autocmd FileType help,nerdtree IndentLinesDisable
 
 " add custom icons folders for closed and open in nerdtree
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-let g:DevIconsEnableFoldersOpenClose = 1
-let g:DevIconsDefaultFolderOpenSymbol='' " symbol for open folder (f07c)
-let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol='' " symbol for closed folder (f07b)
+"let g:DevIconsDefaultFolderOpenSymbol='' " symbol for open folder (f07c)
+"let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol='' " symbol for closed folder (f07b)
 let NERDTreeMapCustomOpen='o'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -82,6 +79,12 @@ set cmdheight=1
 
 " always show signcolumns
 set signcolumn=yes
+
+let g:indentLine_char = '▏▏'
+
+"NerdTree Highlight syntax. Disable unmatched folder and file icons having the same color as their labels (normally green and white), if set by this plugin (it could have been set by some other plugin that you are using).
+let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
+let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
 
 " Highlight symbol under cursor on CursorHold
 

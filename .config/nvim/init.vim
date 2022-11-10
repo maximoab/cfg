@@ -38,6 +38,13 @@ so ~/.vim/maps.vim
         endif
 set background=dark
 let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_better_performance = 1
+
+let g:gruvbox_material_diagnostic_text_highlight = 1
+" let g:gruvbox_material_diagnostic_line_highlight = 1
+let g:gruvbox_material_diagnostic_virtual_text = "colored"
+let g:gruvbox_material_sign_column_background = 'none'
+
 colorscheme gruvbox-material
 let g:lightline.colorscheme = 'gruvbox_material'
 
