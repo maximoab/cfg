@@ -11,6 +11,10 @@ nnoremap <Leader>TT :TestSuite<CR>
 nnoremap <Leader>> 10<C-w>
 nnoremap <Leader>< 10<C-w>
 
+" change 2 split windows from vert to horiz or horiz to vert
+map <Leader>ee <C-w>t<C-w>H
+map <Leader>er <C-w>t<C-w>K
+
 "quick semi
 nnoremap <Leader>< $a;<Esc>
 
@@ -70,8 +74,6 @@ nnoremap <C-e> 10<C-e>
 nnoremap <C-y> 10<C-y>
 nmap <Leader>s <Plug>(easymotion-s2)
 
-" git
-
 " run current file
 nnoremap <Leader>x :!node %<cr>
 
@@ -80,8 +82,6 @@ nnoremap <Leader>x :!node %<cr>
 " <C-g>u breaks current undo, please make your own choice.
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-
 
 set splitright
 function! OpenTerminal()

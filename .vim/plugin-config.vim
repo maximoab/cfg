@@ -48,7 +48,7 @@ let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
 let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
 
-autocmd FileType help,nerdtree IndentLinesDisable
+"autocmd FileType help,nerdtree IndentLinesDisable
 
 " add custom icons folders for closed and open in nerdtree
 "let g:DevIconsDefaultFolderOpenSymbol='' " symbol for open folder (f07c)
