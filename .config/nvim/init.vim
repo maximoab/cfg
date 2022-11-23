@@ -36,8 +36,8 @@ so ~/.vim/maps.vim
  if has('termguicolors')
           set termguicolors
         endif
-set background=dark
-let g:gruvbox_material_background = 'hard'
+"set background=dark
+"let g:gruvbox_material_background = 'hard'
 let g:gruvbox_material_better_performance = 1
 
 let g:gruvbox_material_diagnostic_text_highlight = 1
@@ -59,4 +59,6 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-
+"tabline of bufferline
+"set showtabline=2
+"set guioptions-=e
