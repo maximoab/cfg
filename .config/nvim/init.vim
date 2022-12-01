@@ -17,6 +17,10 @@ so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
+set breakindent
+set breakindentopt=shift:2,min:40,sbr
+set showbreak=\ \ \▏\ \▏\ \▏
+
 "  relative line numbers upon entering nerdtree
 "let g:NERDTreeShowLineNumbers=1
 "autocmd BufEnter NERD_* setlocal rnu

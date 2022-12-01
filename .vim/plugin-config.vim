@@ -36,17 +36,17 @@ let g:lightline.component_expand = {
       \ }
  
 let g:lightline.component_type = {
-      \     'linter_checking': 'right',
-      \     'linter_infos': 'right',
-      \     'linter_warnings': 'warning',
-      \     'linter_errors': 'error',
-      \     'linter_ok': 'right',
+      \  'linter_checking': 'right',
+      \  'linter_infos': 'right',
+      \  'linter_warnings': 'warning',
+      \  'linter_errors': 'error',
+      \  'linter_ok': 'right',
       \ }
 
 let g:lightline.active = {
       \ 'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
       \ 'right': [['error', 'warning', 'info', 'hint', 'fix' ], ['linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ],
-      \    ['gitbranch'], [  'lineinfo' ],
+      \     ['gitbranch'], [  'lineinfo' ],
       \     [ 'percent' ],
       \     [ 'filetype' ],  ] }
 
