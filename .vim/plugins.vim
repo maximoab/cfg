@@ -5,14 +5,21 @@ call plug#begin("~/.vim/plugged")
 Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua' 
+Plug 'andymass/vim-matchup'
 
 " Status Bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
+Plug 'ojroques/vim-scrollstatus'
   
 " Themes
+Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/gruvbox-material'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'morhetz/gruvbox'
+Plug 'patstockwell/vim-monokai-tasty'
+Plug 'sainnhe/sonokai'
+Plug 'phanviet/vim-monokai-pro'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'ryanoasis/vim-devicons'
 
@@ -44,7 +51,9 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'scrooloose/nerdcommenter'
+Plug '907th/vim-auto-save'
 
 " git
 Plug 'itchyny/vim-gitbranch'

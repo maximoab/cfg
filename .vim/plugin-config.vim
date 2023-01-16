@@ -1,4 +1,8 @@
 " PLUGINS CONFIG
+"ScrollProgress plugin config""
+let g:scrollstatus_size = 12
+let g:scrollstatus_symbol_track = '-'
+let g:scrollstatus_symbol_bar = '|'
 
 " HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
@@ -18,9 +22,11 @@ let g:lightline = {
       "\   'inactive': 'inactive'
       "\ },
       \ 'component_function': {
+      \   'percent': 'ScrollStatus',
       \   'gitbranch': 'gitbranch#name',
       \ },
-      "\ 'colorscheme': 'gruvbox_material',
+      \ 'colorscheme': 'monokai_tasty',
+      "\ 'colorscheme': 'sonokai',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
@@ -51,11 +57,6 @@ let g:lightline.active = {
       \     [ 'filetype' ],  ] }
 
 
-"let g:lightline#ale#indicator_checking
-"let g:lightline#ale#indicator_infos
-"let g:lightline#ale#indicator_warnings
-"let g:lightline#ale#indicator_errors
-"let g:lightline#ale#indicator_ok
 let g:lightline#ale#indicator_checking = "\uf110"
 let g:lightline#ale#indicator_infos = "\uf129"
 let g:lightline#ale#indicator_warnings = "\uf071"
@@ -125,3 +126,6 @@ let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
 
 let $FZF_DEFAULT_OPTS='--layout=reverse'
 
+let g:auto_save=1 " enable AutoSave on Vim startup "
+let g:auto_save_silent = 1 " do not display the auto-save notification "
+let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
